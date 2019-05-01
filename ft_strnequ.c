@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 10:30:10 by aderby            #+#    #+#             */
-/*   Updated: 2019/04/30 10:32:10 by aderby           ###   ########.fr       */
+/*   Created: 2017/06/07 15:34:42 by aderby            #+#    #+#             */
+/*   Updated: 2017/06/13 10:32:47 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strnequ(char const *s1, char const *s2, size_t n)
+int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	if (s1 && s2)
 	{

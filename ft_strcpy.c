@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/29 18:36:05 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 13:07:16 by aderby           ###   ########.fr       */
+/*   Created: 2017/06/07 10:43:26 by aderby            #+#    #+#             */
+/*   Updated: 2017/06/08 13:19:36 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	char		*dstptr;
-	const char	*srcptr;
+	char *str;
 
-	dstptr = dst;
-	srcptr = src;
-	while (*srcptr)
+	str = dst;
+	while (*src)
 	{
-		*dstptr = *srcptr;
-		dstptr++;
-		srcptr++;
+		*dst = *src;
+		dst++;
+		src++;
 	}
-	return (dst);
+	*dst = '\0';
+	return (str);
 }
