@@ -6,21 +6,11 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 12:36:48 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 12:07:15 by aderby           ###   ########.fr       */
+/*   Updated: 2019/05/03 23:55:52 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-unsigned int	check_space(char const *s)
-{
-	unsigned int i;
-
-	i = 0;
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-		i++;
-	return (i);
-}
 
 char			*ft_strtrim(char const *s)
 {
@@ -30,7 +20,7 @@ char			*ft_strtrim(char const *s)
 
 	if (s)
 	{
-		i = check_space(s);
+		i = ft_check_space(s);
 		if (s[i] == '\0')
 			return (ft_strnew(1));
 		j = (unsigned int)ft_strlen(s) - 1;

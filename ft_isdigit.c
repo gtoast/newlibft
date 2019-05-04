@@ -6,14 +6,16 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 23:01:07 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 15:39:47 by aderby           ###   ########.fr       */
+/*   Updated: 2019/05/03 23:50:12 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
 int	ft_isdigit(int c)
 {
+	if (c < 0)
+		return (0);
 	if (c >> 6 > 0)
 		return (0);
 	if ((c & 0b00110000) == 48)

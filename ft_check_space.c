@@ -1,24 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/06/07 15:34:42 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 17:35:07 by aderby           ###   ########.fr       */
+/*   Created: 2019/04/30 12:36:48 by aderby            #+#    #+#             */
+/*   Updated: 2019/05/03 23:53:53 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strnequ(char const *s1, char const *s2, size_t n)
+int	ft_check_space(char const *s)
 {
-	if (s1 && s2)
-	{
-		if (ft_strncmp(s1, s2, n) != 0)
-			return (0);
-		return (1);
-	}
-	return (0);
+	unsigned int i;
+
+	i = 0;
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+		i++;
+	return (i);
 }

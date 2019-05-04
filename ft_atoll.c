@@ -6,13 +6,13 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 08:47:22 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 12:26:22 by aderby           ###   ########.fr       */
+/*   Updated: 2019/05/04 00:03:25 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	ft_check_space(const char *str)
+static	int	check_space(const char *str)
 {
 	int	i;
 
@@ -42,7 +42,7 @@ long long	ft_atoll(const char *str)
 	int			isneg;
 
 	res = 0;
-	i = ft_check_space(str);
+	i = check_space(str);
 	isneg = ft_check_neg(i, str);
 	if (str[i] == '-' || str[i] == '+')
 		i++;

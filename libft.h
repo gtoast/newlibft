@@ -6,7 +6,7 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 14:06:37 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 13:24:29 by aderby           ###   ########.fr       */
+/*   Updated: 2019/05/04 00:57:57 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <string.h>
 
+# define BUFF_SIZE 30
 # define BASE 256
 # define PRI 101
 # define STR_LEN len[1]
@@ -74,7 +75,9 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
+int					ft_check_space(char const *s);
 int					ft_search(char *pattern, char *string, int *len, int *hash);
+int					get_next_line(const int fd, char **line);
 char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strnstr(const char *big, const char *little, size_t n);
 size_t				ft_strlen(const char *s);

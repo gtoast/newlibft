@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 12:05:25 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 14:01:34 by aderby           ###   ########.fr       */
+/*   Created: 2017/06/07 15:54:08 by aderby            #+#    #+#             */
+/*   Updated: 2017/06/09 03:28:38 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,19 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char	*ptr;
-	char	*str;
+	char *str;
 
-	ptr = (char *)s + start;
-	if (!(str = ft_strnew(len)))
-		return (NULL);
-	if (!(str = ft_strncpy(str, ptr, len)))
-		return (NULL);
+	if (s)
+	{
+		str = ft_strnew(len);
+		if (!str)
+			return (NULL);
+		while (start--)
+			s++;
+		ft_strncpy(str, s, len);
+		str[len] = '\0';
+	}
+	else
+		str = NULL;
 	return (str);
 }
