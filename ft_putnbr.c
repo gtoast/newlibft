@@ -10,17 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "libft.h" //TODO is cool
 
 void	ft_putnbr(int n)
 {
 	char c;
-
 	if (n < 0)
 	{
 		ft_putchar('-');
 		n = n * -1;
 	}
+	//those edge cases tho
 	if (n == -2147483648)
 	{
 		n = 147483648;
@@ -31,3 +31,6 @@ void	ft_putnbr(int n)
 	c = n % 10 + '0';
 	ft_putchar(c);
 }
+
+
+

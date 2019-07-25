@@ -14,10 +14,9 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char	*str;
-	int		i;
-
-	if (s)
+	char *str;
+	int i;
+	if (s) 
 	{
 		str = ft_strnew(ft_strlen(s));
 		if (!str)
@@ -26,7 +25,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 		while (s[i])
 		{
 			str[i] = f(i, s[i]);
-			i++;
+			i++ ;
 		}
 	}
 	else

@@ -24,14 +24,16 @@ static void	pattern_string_hash(int *hash, char *pattern, char *string, int len)
 		i++;
 	}
 }
-
+//this comment shouldn't be here
 static int	hash_loop(int i, int *hash, int len)
 {
 	while (++i < len)
 		HASH = (HASH * BASE) % PRI;
 	return (HASH);
 }
-
+/*
+** This one should be allowed though
+*/
 int			ft_search(char *s, char *pattern, int *len, int *hash)
 {
 	int	iter[2];

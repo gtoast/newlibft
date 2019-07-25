@@ -36,17 +36,16 @@ static int	get_len(int n)
 
 char		*ft_itoa(int n)
 {
-	char	*ptr;
-	int		i;
-	int		isneg;
+	char *ptr;
+	int i;
+	int	isneg;
 
 	if ((ptr = ft_strnew(get_len(n))) == NULL)
-		return (NULL);
+		return (NULL); 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	isneg = check_neg(n);
-	n *= isneg;
-	i = 0;
+	n *= isneg; i = 0;
 	if (n == 0)
 		ptr[i++] = '0';
 	while (n > 0)

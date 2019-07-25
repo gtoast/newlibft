@@ -12,10 +12,9 @@
 
 #include "libft.h"
 
-static	int	check_space(const char *str)
+int	check_space(const char *str)
 {
 	int	i;
-
 	i = 0;
 	while (str[i])
 	{
@@ -27,19 +26,18 @@ static	int	check_space(const char *str)
 	}
 	return (i);
 }
-
 static int	ft_check_neg(int i, const char *str)
 {
 	if (str[i] == '-')
 		return (-1);
 	return (1);
 }
-
+//this is a bad way to do this
 long long	ft_atoll(const char *str)
 {
-	int			i;
-	long long	res;
-	int			isneg;
+	int i;
+	long long res;
+	int isneg;
 
 	res = 0;
 	i = check_space(str);
@@ -60,3 +58,5 @@ long long	ft_atoll(const char *str)
 	}
 	return (res * isneg);
 }
+
+

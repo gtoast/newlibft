@@ -11,13 +11,12 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
 void	*ft_memalloc(size_t size)
 {
-	void	*ptr;
-
+	void	*ptr; 
 	if (!(ptr = (void *)malloc(sizeof(void) * size)))
 		return (NULL);
-	ft_bzero(ptr, size);
+	ft_bzero (ptr, size); 
 	return (ptr);
 }
+

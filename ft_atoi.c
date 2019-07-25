@@ -9,10 +9,9 @@
 /*   Updated: 2019/05/01 13:23:19 by aderby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
-
-int	ft_atoi(const char *str)
+int	ft_atoi(const	char *str)
 {
-	return ((int)ft_atoll(str));
+	return ((int)ft_atoll(str)); 
 }
+

@@ -10,13 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	char	*ptr1;
+	char *ptr1;
 	char	*ptr2;
-
 	ptr1 = (char *)s1;
 	ptr2 = (char *)s2;
 	while (*ptr1)
@@ -28,3 +25,4 @@ int	ft_strcmp(const char *s1, const char *s2)
 	}
 	return ((unsigned char)*ptr1 - (unsigned char)*ptr2);
 }
+
