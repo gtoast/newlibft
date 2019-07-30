@@ -6,7 +6,7 @@
 #    By: aderby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/29 14:55:08 by aderby            #+#    #+#              #
-#    Updated: 2019/04/29 14:57:48 by aderby           ###   ########.fr        #
+#    Updated: 2019/07/30 10:36:21 by cimara           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ $(OBJ): $(FILES)
 
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
+	ranlib libft.a
 
 clean:
 	rm -f $(OBJ)
