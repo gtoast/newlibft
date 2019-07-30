@@ -6,12 +6,13 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 14:30:34 by aderby            #+#    #+#             */
-/*   Updated: 2019/04/29 15:27:08 by aderby           ###   ########.fr       */
+/*   Updated: 2019/07/29 17:50:30 by cimara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
-void	ft_bzero(	void *s, size_t n)
+
+void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);
 }
-

@@ -6,23 +6,23 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 12:11:45 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 13:10:17 by aderby           ###   ########.fr       */
+/*   Updated: 2019/07/29 17:54:13 by cimara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const	*s1, char const *s2) 
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *str;
-	int i;
+	char	*str;
+	int		i;
 
 	i = 0;
 	if (s1 && s2)
 	{
 		str = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
 		if (!str)
-			return (NULL); 
+			return (NULL);
 		while (s1[i])
 		{
 			str[i] = s1[i];

@@ -6,7 +6,7 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 16:41:31 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 12:53:55 by aderby           ###   ########.fr       */
+/*   Updated: 2019/07/29 19:42:30 by cimara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char *dstptr;
-	unsigned char *srcptr;
-	size_t			i = 0;
+	unsigned char	*dstptr;
+	unsigned char	*srcptr;
+	size_t			i;
+
+	i = 0;
 	dstptr = (unsigned char *)dst;
 	srcptr = (unsigned char *)src;
 	if (dstptr > srcptr)

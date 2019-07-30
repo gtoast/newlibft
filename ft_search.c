@@ -6,13 +6,14 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 15:56:02 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 10:37:16 by aderby           ###   ########.fr       */
+/*   Updated: 2019/07/29 19:37:28 by cimara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	pattern_string_hash(int *hash, char *pattern, char *string, int len)
+static void		pattern_string_hash(int *hash, char *pattern, char *string,
+		int len)
 {
 	int i;
 
@@ -24,17 +25,15 @@ static void	pattern_string_hash(int *hash, char *pattern, char *string, int len)
 		i++;
 	}
 }
-//this comment shouldn't be here
-static int	hash_loop(int i, int *hash, int len)
+
+static int		hash_loop(int i, int *hash, int len)
 {
 	while (++i < len)
 		HASH = (HASH * BASE) % PRI;
 	return (HASH);
 }
-/*
-** This one should be allowed though
-*/
-int			ft_search(char *s, char *pattern, int *len, int *hash)
+
+int				ft_search(char *s, char *pattern, int *len, int *hash)
 {
 	int	iter[2];
 

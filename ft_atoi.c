@@ -6,12 +6,13 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 13:22:26 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 13:23:19 by aderby           ###   ########.fr       */
+/*   Updated: 2019/07/29 18:55:03 by cimara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
+
 int	ft_atoi(const	char *str)
 {
-	return ((int)ft_atoll(str)); 
+	return ((int)ft_atoll(str));
 }
-

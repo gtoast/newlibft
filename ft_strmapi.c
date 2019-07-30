@@ -6,7 +6,7 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 10:01:51 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/01 12:13:24 by aderby           ###   ########.fr       */
+/*   Updated: 2019/07/29 18:49:24 by cimara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char *str;
-	int i;
-	if (s) 
+	char	*str;
+	int		i;
+
+	if (s)
 	{
 		str = ft_strnew(ft_strlen(s));
 		if (!str)
@@ -25,7 +26,7 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 		while (s[i])
 		{
 			str[i] = f(i, s[i]);
-			i++ ;
+			i++;
 		}
 	}
 	else

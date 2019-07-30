@@ -6,13 +6,14 @@
 /*   By: aderby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 12:36:48 by aderby            #+#    #+#             */
-/*   Updated: 2019/05/03 23:53:53 by aderby           ###   ########.fr       */
+/*   Updated: 2019/07/29 19:31:56 by cimara           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_check_space(char const *s)
 {
-	unsigned int i = 0;
+	unsigned int i;
+
 	i = 0;
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
